@@ -1,0 +1,52 @@
+dependencies:
+  build:
+    - nodejs-current
+    - npm
+  runtime:
+    - caddy
+    - npm
+    - bash
+    - curl
+    - s6
+    - jq
+    - ca-certificates
+    - opsmaru-docs-openrc
+  trace: true
+
+stack: alpine/3.19
+
+build:
+  command: |
+    npm install
+    npm run build
+  destinations:
+    - dist
+    - Caddyfile
+
+run: 
+  name: opsmaru-docs
+  services:
+    - name: web
+      binary: caddy
+      start:
+        call: run --config /var/lib/opsmaru-docs/Caddyfile
+
+hook:
+  post-deinstall: |
+    rc-service opsmaru-docs stop
+    rc-update del opsmaru-docs
+  post-install: |
+    rc-update add opsmaru-docs
+  post-upgrade: |
+    rc-service opsmaru-docs start
+  pre-upgrade: |
+    rc-service opsmaru-docs stop
+
+kits:
+- description: web service
+  main: true
+  name: web
+  ports:
+  - main: true
+    name: web
+    target: 3000
