@@ -3,18 +3,19 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	base: '/docs',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'OpsMaru',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/upmaru',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Start Here',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'Getting Started', link: '/getting-started/' },
 					],
 				},
 				{
