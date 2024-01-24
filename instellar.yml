@@ -26,10 +26,11 @@ build:
 run: 
   name: opsmaru-docs
   services:
-    - name: web
-      binary: caddy
-      start:
-        call: run --config /var/lib/opsmaru-docs/Caddyfile
+  - name: web
+    binary: caddy
+    path: /usr/sbin/caddy
+    start:
+      call: run --config /var/lib/opsmaru-docs/Caddyfile
 
 hook:
   post-deinstall: |
