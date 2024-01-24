@@ -4,6 +4,6 @@
 }
 
 :3000 {
-	root /var/lib/opsmaru-docs/dist
+	root * /var/lib/opsmaru-docs/dist
 	file_server
 }
