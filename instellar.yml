@@ -13,7 +13,7 @@ dependencies:
     - opsmaru-docs-openrc
   trace: true
 
-stack: alpine/3.19
+stack: alpine/3.18
 
 build:
   command: |
