@@ -29,5 +29,3 @@ Click `Use` on one of the templates.
 
 This will create your first platform.
 
-
-
