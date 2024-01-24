@@ -28,7 +28,7 @@ run:
   services:
   - name: web
     binary: caddy
-    path: /usr/sbin/caddy
+    path: /usr/sbin
     start:
       call: run --config /var/lib/opsmaru-docs/Caddyfile
 
