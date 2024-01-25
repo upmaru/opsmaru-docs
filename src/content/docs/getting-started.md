@@ -86,7 +86,7 @@ You'll be brought to the run step. This is where you'll be able to choose a name
 :::tip[Terraform / OpenTOFU!]
 OpsMaru outputs standard terraform / opentofu based configuration. You can run this configuration locally in your terminal or use a cloud based service.
 
-We recommend using a cloud based service.
+We recommend using a cloud based service. The integration between cloud based services like terraform cloud and github make the experience much better.
 :::
 
 The video below shows you how to connect your repository to terraform cloud, and also how you can manage your cloud provider credentials.
