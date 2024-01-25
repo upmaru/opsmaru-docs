@@ -83,5 +83,15 @@ You'll be brought to the run step. This is where you'll be able to choose a name
 ![Run configuration](../../assets/infrastructure-builder/run-configuration.png)
 
 
+:::tip[Terraform / OpenTOFU!]
+OpsMaru outputs standard terraform / opentofu based configuration. You can run this configuration locally in your terminal or use a cloud based service.
+
+We recommend using a cloud based service.
+:::
+
+The video below shows you how to connect your repository to terraform cloud, and also how you can manage your cloud provider credentials.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/079bdd740b65437f88b3331edbfb4b6f?sid=ffff90cc-1313-42a9-b075-5dc642f7686f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 
