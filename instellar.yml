@@ -10,6 +10,7 @@ dependencies:
     - s6
     - jq
     - ca-certificates
+    - icu-data-full
     - opsmaru-docs-openrc
   trace: true
 
