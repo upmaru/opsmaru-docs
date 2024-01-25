@@ -74,7 +74,7 @@ The default configuration will setup a 3 node cluster + 1 bastion. You can chang
 
 ![Cluster topology](../../assets/infrastructure-builder/cluster-topology.png)
 
-You can also use the `Preview Code` to see the genreated code. If you're happy with everything click next to continue.
+You can also use the `Preview Code` to see the generated code. If you're happy with everything click next to continue.
 
 ## Run your Configuration
 
