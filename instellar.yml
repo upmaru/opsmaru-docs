@@ -4,13 +4,11 @@ dependencies:
     - npm
   runtime:
     - caddy
-    - npm
     - bash
     - curl
     - s6
     - jq
     - ca-certificates
-    - icu-data-full
     - opsmaru-docs-openrc
   trace: true
 
