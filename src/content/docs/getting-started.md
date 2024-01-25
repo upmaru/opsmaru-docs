@@ -74,4 +74,14 @@ The default configuration will setup a 3 node cluster + 1 bastion. You can chang
 
 ![Cluster topology](../../assets/infrastructure-builder/cluster-topology.png)
 
+You can also use the `Preview Code` to see the genreated code. If you're happy with everything click next to continue.
+
+## Run your Configuration
+
+You'll be brought to the run step. This is where you'll be able to choose a name for your repository. OpsMaru will create a repository in your github organization with all the configuration files.
+
+![Run configuration](../../assets/infrastructure-builder/run-configuration.png)
+
+
+
 
