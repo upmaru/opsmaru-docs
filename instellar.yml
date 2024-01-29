@@ -10,7 +10,6 @@ dependencies:
     - jq
     - ca-certificates
     - opsmaru-docs-openrc
-  trace: true
 
 stack: alpine/3.19
 
@@ -22,14 +21,14 @@ build:
     - dist
     - Caddyfile
 
-run: 
+run:
   name: opsmaru-docs
   services:
-  - name: web
-    binary: caddy
-    path: /usr/sbin
-    start:
-      call: run --config /var/lib/opsmaru-docs/Caddyfile
+    - binary: caddy
+      name: web
+      path: /usr/sbin
+      start:
+        call: run --config /var/lib/opsmaru-docs/Caddyfile
 
 hook:
   post-deinstall: |
@@ -43,10 +42,10 @@ hook:
     rc-service opsmaru-docs stop
 
 kits:
-- description: web service
-  main: true
-  name: web
-  ports:
-  - main: true
+  - description: static site server
+    main: true
     name: web
-    target: 3000
+    ports:
+      - main: true
+        name: web
+        target: 3000
