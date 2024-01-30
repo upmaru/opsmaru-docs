@@ -33,3 +33,16 @@ cat ~/.ssh/id_ed25519.pub
 
 Give the key a name and click `Add SSH key`.
 
+## Referencing SSH Key
+
+:::tip[Referencing ssh key]
+With digitalocean you will need to use the fingerprint in the infrastructure builder.
+:::
+
+In your digitalocean ssh keys listing you will see the fingerprint.
+
+![ssh key list with fingerprint](../../../../assets/infrastructure/digitalocean/ssh-key-list-with-fingerprint.png)
+
+When you want to reference a given ssh key you will need to copy the fingerprint to add in your blueprint.
+
+![reference digitalocean ssh key in opsmaru](../../../../assets/infrastructure/digitalocean/referencing-ssh-key.png)
