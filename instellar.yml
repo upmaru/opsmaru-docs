@@ -4,7 +4,6 @@ dependencies:
     - npm
   runtime:
     - caddy
-    - npm
     - bash
     - curl
     - s6
@@ -13,7 +12,7 @@ dependencies:
     - opsmaru-docs-openrc
   trace: true
 
-stack: alpine/3.18
+stack: alpine/3.19
 
 build:
   command: |

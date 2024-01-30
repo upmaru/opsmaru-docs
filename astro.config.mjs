@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [starlight({
     title: 'OpsMaru',
     social: {
-      github: 'https://github.com/upmaru'
+      github: 'https://github.com/upmaru/opsmaru-docs'
     },
     sidebar: [{
       label: 'Start Here',
@@ -21,9 +21,9 @@ export default defineConfig({
         link: '/getting-started/'
       }]
     }, {
-      label: 'Reference',
+      label: 'Infrastructure',
       autogenerate: {
-        directory: 'reference'
+        directory: 'infrastructure'
       }
     }]
   }), react()]
