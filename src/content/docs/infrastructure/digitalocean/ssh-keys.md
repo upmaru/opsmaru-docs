@@ -33,6 +33,3 @@ cat ~/.ssh/id_ed25519.pub
 
 Give the key a name and click `Add SSH key`.
 
-
-
-
