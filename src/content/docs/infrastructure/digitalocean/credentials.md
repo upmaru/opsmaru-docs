@@ -2,3 +2,52 @@
 title: Credentials
 description: Retrieving your digitalocean credentials.
 ---
+
+To provision resources with digitalocean you will need 2 types of credentials.
+
++ Spaces Token - used for setting up spaces bucket
++ API Token - used for setting up compute, databases and networking.
+
+## API Token
+
+To get the `api token` head over to the API section on the side bar.
+
+![api section](../../../../assets/infrastructure/digitalocean/api-token.png)
+
+Click on the `Generate New Token` button.
+
+![api section](../../../../assets/infrastructure/digitalocean/generate-new-token.png)
+
+Give your token a name you can identify with, be sure to check the `Write` permission, and click `Generate Token`. You can choose an expiration, but you need to make sure to replace the token once it expires.
+
+![api section](../../../../assets/infrastructure/digitalocean/generate-new-token-form.png)
+
+Once you create the token you will see it once, copy it and store it somewhere safe.
+
+![generated api token](../../../../assets/infrastructure/digitalocean/generated-api-token.png)
+
+## Spaces Token
+
+To get the `spaces token` click on the `Spaces Keys` tab.
+
+![spaces keys](../../../../assets/infrastructure/digitalocean/spaces-keys-tab.png)
+
+Click on the `Generate new key` button, give the key a name and click `Create access key`.
+
+![generated spaces token](../../../../assets/infrastructure/digitalocean/generated-spaces-token.png)
+
+## Credential Management
+
+:::caution[Credential management]
+Do not share these credentials to anyone, please store it safely:
+
++ Do not check them into source control.
++ If you use terraform cloud user variable sets to store them and check the `sensitive` option.
+:::
+
+### Further Detail
+
+We have a video showing you how to store your credentials inside terraform cloud.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/079bdd740b65437f88b3331edbfb4b6f?sid=78c0e5b5-2e86-421a-916e-75ed8defa4ba" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
