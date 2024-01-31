@@ -9,6 +9,16 @@ export default defineConfig({
   outDir: './dist/docs',
   integrations: [starlight({
     title: 'OpsMaru',
+    head: [
+      {
+        tag: 'script',
+        attrs: {
+          src: 'https://plausible.io/js/script.js',
+          'data-domain': 'opsmaru.com',
+          defer: true
+        }
+      }
+    ],
     social: {
       github: 'https://github.com/upmaru/opsmaru-docs'
     },
@@ -24,6 +34,11 @@ export default defineConfig({
       label: 'Infrastructure',
       autogenerate: {
         directory: 'infrastructure'
+      }
+    }, {
+      label: 'Application',
+      autogenerate: {
+        directory: 'application'
       }
     }]
   }), react()]
