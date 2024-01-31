@@ -9,6 +9,9 @@ export default defineConfig({
   outDir: './dist/docs',
   integrations: [starlight({
     title: 'OpsMaru',
+    logo: {
+      src: './src/assets/logo.webp'
+    },
     head: [
       {
         tag: 'script',
