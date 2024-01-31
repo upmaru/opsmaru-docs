@@ -35,14 +35,42 @@ export default defineConfig({
       }]
     }, {
       label: 'Infrastructure',
-      autogenerate: {
-        directory: 'infrastructure'
-      }
+      items: [
+        { label: 'Accessing your cluster', link: '/infrastructure/accessing-your-cluster/'},
+        { 
+          label: 'Amazon', 
+          items: [
+            { label: 'Credentials', link: '/infrastructure/aws/credentials/'},
+            { label: 'SSH Keys', link: '/infrastructure/aws/ssh-keys/'}
+          ]
+        },
+        { 
+          label: 'Digital Ocean', 
+          items: [
+            { label: 'Credentials', link: '/infrastructure/digitalocean/credentials/'},
+            { label: 'SSH Keys', link: '/infrastructure/digitalocean/ssh-keys/'}
+          ]
+        }
+      ]
     }, {
       label: 'Application',
-      autogenerate: {
-        directory: 'application'
-      }
+      items: [
+        { label: 'Connect repository', link: '/application/connect-repository/'},
+        { label: 'Useful commands', link: '/application/useful-commands/'},
+        {
+          label: 'Ruby on Rails', 
+          items: [
+            { label: 'Deployment', link: '/application/rails/deployment/'},
+          ]
+        },
+        {
+          label: 'Elixir / Phoenix', 
+          items: [
+            { label: 'Deployment', link: '/application/phoenix/deployment/'},
+            { label: 'Clustering support', link: '/application/phoenix/clustering/'}
+          ]
+        }
+      ]
     }]
   }), react()]
 });
