@@ -71,6 +71,12 @@ export default defineConfig({
           ]
         }
       ]
+    }, {
+      label: 'Build system',
+      items: [
+        { label: 'PAKman', link: '/build/pakman/'},
+        { label: 'Github Action', link: '/build/github-action/'}
+      ]
     }]
   }), react()]
 });
