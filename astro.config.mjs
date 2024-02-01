@@ -76,7 +76,8 @@ export default defineConfig({
       items: [
         { label: 'PAKman', link: '/build/pakman/'},
         { label: 'Github Action', link: '/build/github-action/'},
-        { label: 'Conditional deployment', link: '/build/conditional-deployment/'}
+        { label: 'Conditional deployment', link: '/build/conditional-deployment/'},
+        { label: 'Upgrade from v7', link: '/build/upgrade-from-v7/'}
       ]
     }]
   }), react()]
