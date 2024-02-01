@@ -5,6 +5,8 @@ description: PAKman is a build system for building packages for your application
 
 PAKman is a build system for building packages for your application. It's a simple way to build packages for your application and deploy them to your infrastructure.
 
+We recommend using the build pack selection from the UI to generate the bulk of the configuration but having an understanding of the generated file is also important.
+
 :::note[PAKman is Open Sourced]
 PAKman is open sourced and available on [GitHub](https://github.com/upmaru/pakman). Feel free to let us know if you have any suggestions.
 :::
@@ -158,7 +160,7 @@ Kits are something specific to `instellar` our core engine that orchestrates dep
 
 In the example below we have a `web` kit, which is the main kit. We also have a `fork` which is the `good-job` process.
 
-```yaml
+```yaml title="instellar.yml"
 kits:
   - description: web service
     forks:
