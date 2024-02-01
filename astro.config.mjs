@@ -67,9 +67,24 @@ export default defineConfig({
           label: 'Elixir / Phoenix', 
           items: [
             { label: 'Deployment', link: '/application/phoenix/deployment/'},
+            { label: 'Database certificate', link: '/application/phoenix/database-certificate/'},
             { label: 'Clustering support', link: '/application/phoenix/clustering/'}
           ]
         }
+      ]
+    }, {
+      label: 'Build System',
+      items: [
+        { label: 'PAKman', link: '/build/pakman/'},
+        { label: 'Github Action', link: '/build/github-action/'},
+        { label: 'Conditional deployment', link: '/build/conditional-deployment/'},
+        { label: 'Upgrade from v7', link: '/build/upgrade-from-v7/'}
+      ]
+    }, {
+      label: 'Cluster Operation',
+      items: [
+        { label: 'Uplink', link: '/operation/uplink/'},
+        { label: 'Lite VS Pro', link: '/operation/lite-vs-pro/'}
       ]
     }]
   }), react()]
