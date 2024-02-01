@@ -71,7 +71,13 @@ export default defineConfig({
             { label: 'Database certificate', link: '/application/phoenix/database-certificate/'},
             { label: 'Clustering support', link: '/application/phoenix/clustering/'}
           ]
-        }
+        },
+         {
+          label: 'Astro', 
+          items: [
+            { label: 'Static site', link: '/application/astro/static/'},
+          ]
+        },
       ]
     }, {
       label: 'Build System',
