@@ -80,6 +80,12 @@ export default defineConfig({
         { label: 'Conditional deployment', link: '/build/conditional-deployment/'},
         { label: 'Upgrade from v7', link: '/build/upgrade-from-v7/'}
       ]
+    }, {
+      label: 'Cluster Operation',
+      items: [
+        { label: 'Uplink', link: '/operation/uplink/'},
+        { label: 'Lite VS Pro', link: '/operation/lite-vs-pro/'}
+      ]
     }]
   }), react()]
 });
