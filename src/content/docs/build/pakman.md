@@ -9,6 +9,8 @@ We recommend using the build pack selection from the UI to generate the bulk of 
 
 :::note[PAKman is Open Sourced]
 PAKman is open sourced and available on [GitHub](https://github.com/upmaru/pakman). Feel free to let us know if you have any suggestions.
+
+There is also a [blog post](https://zacksiri.dev/posts/why-i-created-pakman) by the author (who also happens to be one of the founders of OpsMaru) about how all this works.
 :::
 
 ## Configuring your build

@@ -34,7 +34,7 @@ With v7 we had to build a release for every version of alpine. This is because i
 
 This also means we need to build 1 release of PAKman. Which is a quality of life improvement for the maintainers of PAKman
 
-## Deprecating of v7
+## Deprecation of v7
 
 We are now deprecating v7. While v7 will continue to work, we will no longer be patching / updating v7. Any new features / support will only be on v8 moving forward.
 

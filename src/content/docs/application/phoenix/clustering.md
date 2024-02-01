@@ -13,7 +13,7 @@ Elixir apps support clustering out of the box. Clustering can bring many advanta
 
 If you wish to use clustering in your application please make sure you have `:libcluster` installed as a dependency. We also have a [hex package](https://hex.pm/packages/libcluster_uplink) that will make it easy for clustering your application.
 
-```elixir
+```elixir title="mix.exs"
 def deps do
   [
     {:libcluster, "~> 3.0"},
@@ -22,9 +22,9 @@ def deps do
 end
 ```
 
-Then simpl add the following to your `config.exs` file.
+Then simply add the following to your runtime config.
 
-```elixir
+```elixir title="config/runtime.exs"
 config :libcluster,
   topologies: [
     example: [

@@ -67,6 +67,7 @@ export default defineConfig({
           label: 'Elixir / Phoenix', 
           items: [
             { label: 'Deployment', link: '/application/phoenix/deployment/'},
+            { label: 'Database certificate', link: '/application/phoenix/database-certificate/'},
             { label: 'Clustering support', link: '/application/phoenix/clustering/'}
           ]
         }
