@@ -34,6 +34,10 @@ With v7 we had to build a release for every version of alpine. This is because i
 
 This also means we need to build 1 release of PAKman. Which is a quality of life improvement for the maintainers of PAKman
 
+### Automatically Patched
+
+When you reference the pakman action you are now using `upmaru/pakman@v8`. The `v8` tag can be updated by us the maintainers of PAKman. This means when we do a patch / update PAKman with new releases, you receive the update automatically without having to do any work. This ensure we can provide you the best when it comes to keeping your build system up-to-date and secure.
+
 ## Deprecation of v7
 
 We are now deprecating v7. While v7 will continue to work, we will no longer be patching / updating v7. Any new features / support will only be on v8 moving forward.
