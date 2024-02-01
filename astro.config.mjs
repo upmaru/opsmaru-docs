@@ -72,10 +72,11 @@ export default defineConfig({
         }
       ]
     }, {
-      label: 'Build system',
+      label: 'Build System',
       items: [
         { label: 'PAKman', link: '/build/pakman/'},
-        { label: 'Github Action', link: '/build/github-action/'}
+        { label: 'Github Action', link: '/build/github-action/'},
+        { label: 'Conditional deployment', link: '/build/conditional-deployment/'}
       ]
     }]
   }), react()]

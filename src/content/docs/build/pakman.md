@@ -13,7 +13,7 @@ PAKman is open sourced and available on [GitHub](https://github.com/upmaru/pakma
 
 ## Configuring your build
 
-PAKman uses the `instellar.yml` config in your application to generate the build instructions for `apktools`, which is the native package builder for Alpine Linux.
+PAKman uses the `instellar.yml` config in your application to generate the build instructions for `apk-tools`, which is the native package builder for Alpine Linux.
 
 The basic structure of `instellar.yml` is as follows:
 
