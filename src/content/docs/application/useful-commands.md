@@ -9,6 +9,8 @@ There is something to note about the generated configuration. If you scroll to t
 
 :::note[LXD Remote]
 This guide assumes you've already [added your cluster](/docs/infrastructure/accessing-your-cluster/#lxc-remote) as a remote on your local machine.
+
+Make sure you run `lxc remote list` and check if you have the right cluster selected.
 :::
 
 ## Jumping into the Container
@@ -20,6 +22,22 @@ lxc exec container-name --project project.name -- ash
 ```
 
 This will take you inside your container.
+
+## Start / Stop / Restart
+
+You can start, stop, and restart your application using the following commands:
+
+```bash
+rc-service app-name stop
+```
+
+```bash
+rc-service app-name start
+```
+
+```bash
+rc-service app-name restart
+```
 
 ## Migrations
 
