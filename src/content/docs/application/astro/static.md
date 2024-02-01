@@ -15,7 +15,7 @@ Click on `Configure` on the target app you want to deploy.
 
 ## Astro static site
 
-For your Astro app select the `base-astro-static` pack.
+For your Astro app select the `base-astro-static` pack. This build pack will build your astro site and serve it using the `caddy` web server.
 
 ![app directory](../../../../assets/application/astro/build-pack-config.png)
 
