@@ -93,6 +93,11 @@ export default defineConfig({
         { label: 'Uplink', link: '/operation/uplink/'},
         { label: 'Lite VS Pro', link: '/operation/lite-vs-pro/'}
       ]
+    }, {
+      label: 'Trouble Shooting',
+      items: [
+        { label: 'Platform provisioning', link: '/trouble-shooting/platform-provisioning/'}
+      ]
     }]
   }), react()]
 });
