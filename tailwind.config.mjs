@@ -6,7 +6,7 @@ export default {
 	theme: {
 		 extend: {
 			colors: {
-				accent: colors.purple,
+				accent: colors.indigo,
 				gray: colors.slate
 			}
 		},
