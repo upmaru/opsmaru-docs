@@ -16,6 +16,6 @@ Once you add the repositories you should be redirected back to OpsMaru and see a
 
 ![setup repository](../../../assets/application/setup-repository.png)
 
-Once you click `Setup` on the repository you can begin configuring your application. Each framework / language can be configured differently choose the one you want to deploy.
+Once you click `Setup` on the repository you can begin configuring your application. Each framework / language can be configured differently. Choose the one you want to deploy.
 
 
