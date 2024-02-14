@@ -1,9 +1,9 @@
 ---
-title: PAKman Github Action
+title: PAKman GitHub Action
 description: PAKman is a build system for building packages for your application.
 ---
 
-PAKman is available to users as a github action. This guide will give you a breakdown of how PAKman works as a github action. When you use the Application setup in our app you will also get the deployment.yml configuration for your github actions.
+PAKman is available to users as a GitHub Action. This guide will give you a breakdown of how PAKman works as a GitHub Action. When you use the Application setup in our app, you will also get the deployment.yml configuration for your GitHub Actions.
 
 ```yaml title=".github/workflows/deployment.yml"
 name: 'Deployment'
@@ -89,11 +89,11 @@ jobs:
 
 ## Build
 
-In PAKman v8 the build and deploy steps are separate. This is to allow for a retry of the deployment without having to rebuild the package. This is important because the build process can be time consuming and we want to avoid unnecessary rebuilds.
+In PAKman v8, the build and deploy steps are separate. This is to allow for a retry of the deployment without having to rebuild the package. This is important because the build process can be time consuming and we want to avoid unnecessary rebuilds.
 
 ### Setup Pakman
 
-The `upmaru/pakman@v8` github action uses the `setup-alpine` action underneath. This basically sets up alpine linux as chroot inside the default ubuntu runtime in github actions. You can customize the version of alpine using the `with` option.
+The `upmaru/pakman@v8` GitHub Action uses the `setup-alpine` action underneath. This basically sets up Alpine Linux as chroot inside the default ubuntu runtime in GitHub Actions. You can customize the version of Alpine using the `with` option.
 
 ```yaml
 - name: Setup Pakman
@@ -120,7 +120,7 @@ We also pass the command 2 environment variables `ABUILD_PRIVATE_KEY` and `ABUIL
 
 ### Build Package
 
-In the next step the action will run `abuild` which is the tool used for building alpine packages.
+In the next step, the Action will run `abuild`, which is the tool used for building Alpine packages.
 
 
 ```yaml
@@ -135,7 +135,7 @@ In the next step the action will run `abuild` which is the tool used for buildin
 
 ### Upload Artifact
 
-This is a standard github action. All it does is upload the built artifact. The artifact is stored on github's storage, and will be evicted based on your configuration in github. This step is important because it prevents rebuilding when we need to retry a deployment as you'll see in the next section.
+This is a standard GitHub Action. All it does is upload the built artifact. The artifact is stored on GitHub's storage, and will be evicted based on your configuration in GitHub. This step is important because it prevents rebuilding when we need to retry a deployment, as you'll see in the next section.
 
 ```yaml
 - name: Upload Artifact
@@ -161,7 +161,7 @@ We download the artifact from the previous step.
 
 ### Setup Pakman
 
-Since we want to run pakman in alpine we'll setup PAKman again. This is not time consuming because PAKman utilizes caching on github action. If PAKman is already built it will simply load the cache. This is another feature of PAKman v8.
+Since we want to run PAKman in Alpine we'll set up PAKman again. This is not time consuming because PAKman utilizes caching on GitHub Action. If PAKman is already built, it will simply load the cache. This is another feature of PAKman v8.
 
 ```yaml
 - name: Setup Pakman
@@ -172,7 +172,7 @@ Since we want to run pakman in alpine we'll setup PAKman again. This is not time
 
 ### Merge Artifact
 
-In this step we take all the artifacts built as separate X64 or in the future arm architecture and we merge them into a single zip file.
+In this step we take all the artifacts built as separate X64 or, in the future, ARM architecture and we merge them into a single zip file.
 
 ```yaml
 - name: Merge Artifact
