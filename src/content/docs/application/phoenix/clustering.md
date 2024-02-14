@@ -5,13 +5,13 @@ description: This guide will show you how to setup automated clustering for your
 
 Elixir apps support clustering out of the box. Clustering can bring many advantages like:
 
-+ Distributed Caching
-+ Fault Tolerance
++ Distributed caching
++ Fault tolerance
 + Distributing workload across cluster
 
 ## libcluster
 
-If you wish to use clustering in your application please make sure you have `:libcluster` installed as a dependency. We also have a [hex package](https://hex.pm/packages/libcluster_uplink) that will make it easy for clustering your application.
+If you wish to use clustering in your application please make sure you have `:libcluster` installed as a dependency. We also have a [hex package](https://hex.pm/packages/libcluster_uplink) that will make clustering in your application easy.
 
 ```elixir title="mix.exs"
 def deps do

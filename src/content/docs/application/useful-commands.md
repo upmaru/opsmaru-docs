@@ -1,6 +1,6 @@
 ---
 title: Useful Commands
-description: This page will show you some useful commands about your application.
+description: This page will show you some useful commands for handling your application.
 ---
 
 There is something to note about the generated configuration. If you scroll to the `run` section of your configuration, you will see a list of `commands`. These are commands you can run.
@@ -13,7 +13,7 @@ This guide assumes you've already [added your cluster](/docs/infrastructure/acce
 Make sure you run `lxc remote list` and check if you have the right cluster selected.
 :::
 
-## Jumping into the Container
+## Jumping into the container
 
 Applications are provisioned inside LXD containers. You can jump into the container in the following way:
 
@@ -41,7 +41,7 @@ rc-service app-name restart
 
 ## Migrations
 
-If you use frameworks like Ruby on Rails or Phoenix you may have to work with migrations. They can be run in the following way.
+If you use frameworks like Ruby on Rails or Phoenix, you may have to work with migrations. They can be run in the following way.
 
 ```bash
 rc-service app-name migrate
@@ -57,7 +57,7 @@ rc-service app-name logs
 
 ## Console
 
-If your application has console access you can use the following command.
+If your application has console access, you can use the following command.
 
 ```bash
 rc-service app-name console
