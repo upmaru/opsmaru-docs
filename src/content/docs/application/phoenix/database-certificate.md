@@ -5,7 +5,7 @@ description: Enabling ssl connection for your database.
 
 We recommend you enable the `ssl` option in your ecto configuration. We expose the database certificate from the infrastructure provider to your application. This guide shows you how to configure ssl / tls connectivity for your database.
 
-In `config/runtime.exs` under the `:prod` configuration we recommend the following code snippet. When you selected the `postgresql` addon for your elixir / phoenix application. It automatically exposes `DATABASE_CERT_PEM` to your application.
+In `config/runtime.exs` under the `:prod` configuration, we recommend the following code snippet, when you've selected the `postgresql` add-on for your elixir / phoenix application. It automatically exposes `DATABASE_CERT_PEM` to your application.
 
 ```elixir title="config/runtime.exs"
 if config_env() == :prod do
