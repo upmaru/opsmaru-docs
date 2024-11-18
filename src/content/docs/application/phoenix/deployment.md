@@ -56,4 +56,51 @@ mix release
 
 The build command for elixir projects and phoenix is actually the same `mix release`. The only difference is with phoenix you need to compile the assets. If you are not using phoenix simply comment out the un-necessary lines.
 
+
+
+### App Name
+When you generate an app whith underscore in the name for example axigbe_chat. You will get the follwing error 
+when deploying 
+```bash
+cp: cannot stat '/home/runner/work/axigbe_chat/axigbe_chat/.apk/axigbecode/axigbe_chat/src/_build/prod/rel/axigbe-chat/*': No such file or directory
+```
+This error is due to `mix release`.  When running `mix release` it will generate `_build/prod/rel/axigbe_chat/` 
+but the code generator is producing `_build/prod/rel/axigbe-chat/`
+
+To fix this, you first have to change the `destinations:` config and the `binary` as well.
+The destination folder becomes `_build/prod/rel/axigbe_chat/` and the binary should be `axigbe_chat`
+not `axigbe-chat`
+ 
+```bash
+  destinations:
+    - _build/prod/rel/axigbe_chat/*
+```
+and your run section should look like the following: 
+
+```bash
+run:
+  name: axigbe-chat
+  commands:
+    - name: migrate
+      binary: axigbe_chat
+      call: "eval AxigbeChat.Release.Tasks.migrate"
+    - name: console
+      binary: axigbe_chat
+      call: remote
+    - binary: tail
+      call: -f -n 100 /var/log/axigbe-chat/current
+      name: logs
+      path: /usr/bin
+  services:
+    - name: web
+      binary: axigbe_chat
+      start:
+        call: start
+```
+ 
+
+ 
+
+
+
 Once you're happy merge your pull-request and the build process should begin.

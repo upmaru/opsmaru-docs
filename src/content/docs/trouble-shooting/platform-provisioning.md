@@ -24,4 +24,3 @@ Your cluster may have been successfully provisioned, however sometimes there are
 You can resolve these issues easily by [sshing into](/docs/infrastructure/accessing-your-cluster/) your node and rebooting it.
 
 
-
