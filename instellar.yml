@@ -16,20 +16,20 @@ stack: alpine/3.19
 
 build:
   command: |
-    npm install
+    npm install --force
     npm run build
   destinations:
     - dist
     - Caddyfile
 
-run: 
+run:
   name: opsmaru-docs
   services:
-  - name: web
-    binary: caddy
-    path: /usr/sbin
-    start:
-      call: run --config /var/lib/opsmaru-docs/Caddyfile
+    - name: web
+      binary: caddy
+      path: /usr/sbin
+      start:
+        call: run --config /var/lib/opsmaru-docs/Caddyfile
 
 hook:
   post-deinstall: |
@@ -43,10 +43,10 @@ hook:
     rc-service opsmaru-docs stop
 
 kits:
-- description: web service
-  main: true
-  name: web
-  ports:
-  - main: true
+  - description: web service
+    main: true
     name: web
-    target: 3000
+    ports:
+      - main: true
+        name: web
+        target: 3000
